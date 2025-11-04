@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            line-height: 1.8;
             color: #333;
         }
 
@@ -49,105 +49,173 @@
         .dcp-header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 4rem 2rem;
+            padding: 4rem 2rem 3rem;
             text-align: center;
         }
 
         .dcp-header h1 {
             font-size: 2.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
         }
 
         .dcp-header .subtitle {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             opacity: 0.95;
+            margin-bottom: 2rem;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-top: 1rem;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 3rem 2rem;
         }
 
-        .dcp-section {
-            margin-bottom: 3rem;
+        .section {
+            margin-bottom: 4rem;
         }
 
         h2 {
             color: #c41e3a;
-            margin-bottom: 1rem;
-            font-size: 1.8rem;
-            border-left: 5px solid #c41e3a;
-            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #c41e3a;
+        }
+
+        h3 {
+            color: #667eea;
+            margin: 2rem 0 1rem;
+            font-size: 1.5rem;
         }
 
         p {
-            margin-bottom: 1rem;
-            line-height: 1.8;
+            margin-bottom: 1.2rem;
             font-size: 1.05rem;
+            line-height: 1.8;
         }
 
         .overview-box {
             background: #f8f9fa;
             padding: 2rem;
             border-radius: 8px;
-            border-left: 4px solid #667eea;
+            border-left: 5px solid #667eea;
             margin-bottom: 2rem;
         }
 
-        .key-findings {
+        .findings-list {
             background: #e7f3ff;
             padding: 2rem;
             border-radius: 8px;
-            border-left: 4px solid #667eea;
             margin: 2rem 0;
         }
 
-        .key-findings h3 {
-            color: #667eea;
-            margin-bottom: 1rem;
-        }
-
-        .key-findings ul {
+        .findings-list ul {
             margin-left: 2rem;
         }
 
-        .key-findings li {
-            margin-bottom: 0.8rem;
+        .findings-list li {
+            margin-bottom: 1.2rem;
+            line-height: 1.8;
         }
 
-        .tips-box {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 2rem;
-            margin: 2rem 0;
+        .findings-list strong {
+            color: #2c3e50;
+        }
+
+        .visual-container {
+            background: white;
+            padding: 2.5rem;
             border-radius: 8px;
+            margin: 2.5rem 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
 
-        .tips-box h3 {
+        .visual-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            display: block;
+        }
+
+        .caption {
+            font-size: 0.95rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 1rem;
+            line-height: 1.6;
+        }
+
+        .tips-section {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .tips-section h3 {
             color: #856404;
-            margin-bottom: 1rem;
+            margin-top: 0;
         }
 
-        .tips-box ul {
+        .tips-section ul {
             margin-left: 2rem;
         }
 
-        .tips-box li {
-            margin-bottom: 0.8rem;
-            font-weight: 500;
+        .tips-section li {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .reflection-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+
+        .reflection-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .global-case {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 5px solid #667eea;
+            margin: 2rem 0;
         }
 
         .references {
             background: #f8f9fa;
-            padding: 2rem;
+            padding: 2.5rem;
             border-radius: 8px;
             margin-top: 3rem;
         }
 
         .references h2 {
-            border-left: none;
-            padding-left: 0;
+            border-bottom: none;
             margin-bottom: 1.5rem;
         }
 
@@ -157,50 +225,33 @@
         }
 
         .references li {
-            margin-bottom: 1.2rem;
+            margin-bottom: 1.5rem;
         }
 
-        .visual-section {
-            background: white;
+        .attributions {
+            background: #e9ecef;
             padding: 2rem;
             border-radius: 8px;
-            margin: 2rem 0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-top: 2rem;
         }
 
-        .visual-section img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-
-        .image-caption {
-            font-size: 0.9rem;
-            color: #666;
-            font-style: italic;
-            margin-top: 0.5rem;
-            text-align: center;
-        }
-
-        .personal-reflection {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 2rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-        }
-
-        .personal-reflection h3 {
-            color: white;
+        .attributions h3 {
+            color: #c41e3a;
             margin-top: 0;
         }
 
-        .highlight {
-            background: #fff3cd;
-            padding: 0.2rem 0.4rem;
-            border-radius: 3px;
+        .attributions ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .attributions li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .attributions li:last-child {
+            border-bottom: none;
         }
 
         footer {
@@ -229,6 +280,10 @@
             .dcp-header h1 {
                 font-size: 1.8rem;
             }
+
+            .dcp-header .subtitle {
+                font-size: 1.1rem;
+            }
         }
     </style>
 </head>
@@ -245,93 +300,157 @@
     </nav>
 
     <div class="dcp-header">
-        <h1>🌍 Digital Misinformation Across Borders</h1>
+        <h1>Digital Misinformation Across Borders</h1>
         <p class="subtitle">How False News Spreads in Bangladesh and the United States</p>
-        <p style="margin-top: 1rem;">
-            <a href="assets/docs/DCP_Full_Paper.pdf" download style="display: inline-block; padding: 0.8rem 1.5rem; background: white; color: #667eea; text-decoration: none; border-radius: 5px; font-weight: 600; margin-top: 1rem;">📄 Download Full Research Paper</a>
-        </p>
+        <a href="assets/docs/DCP_Full_Paper.pdf" class="download-btn" download>Download Full Research Paper</a>
     </div>
 
     <div class="container">
-        <div class="dcp-section">
-            <h2>💡 Overview</h2>
+        <!-- Overview Section -->
+        <section class="section">
+            <h2>Project Overview</h2>
             <div class="overview-box">
-                <p>My Digital Capstone Project explores how misinformation spreads differently in Bangladesh and the United States, influenced by culture, media literacy, and digital platform use. The goal is to raise awareness of how quickly false information spreads and to provide practical tips for verifying online content.</p>
-                <p>This research-based multimedia project examines the mechanisms behind digital misinformation, the role of social media algorithms, and the real-world consequences of believing and sharing false information online.</p>
+                <p>This Digital Capstone Project examines how misinformation spreads differently in Bangladesh and the United States, influenced by culture, media literacy, and digital platform use. Through research and personal observation, this project explores the mechanisms behind digital misinformation, the role of social media algorithms, and the real-world consequences of believing and sharing false information online.</p>
+                <p><strong>Goal:</strong> To raise awareness about how quickly false information spreads and to provide practical strategies for verifying online content before sharing it.</p>
             </div>
+        </section>
 
-        <div class="dcp-section">
-            <h2>🧠 Practical Tips to Spot Misinformation</h2>
-        </div>
-
-        <div class="dcp-section">
-            <h2>🔍 Background & Personal Connection</h2>
-            <p>I became interested in this topic after noticing how often family members in Bangladesh shared viral posts that weren't true. These posts ranged from health misinformation to political conspiracy theories, and they spread rapidly through WhatsApp groups and Facebook.</p>
-            <p>When I came to the United States, I saw similar issues, especially around elections and social movements like Black Lives Matter and COVID-19. Despite being in two very different countries with different languages and cultures, the patterns were remarkably similar—emotional content, sensational headlines, and algorithm-driven amplification.</p>
+        <!-- Background Section -->
+        <section class="section">
+            <h2>Background and Personal Connection</h2>
+            <p>Growing up in Bangladesh, I witnessed firsthand how misinformation shaped what people believed. My parents and relatives would share viral posts on Facebook and videos on WhatsApp that appeared credible but were often false. These ranged from fabricated medical advice to edited political clips that spread rapidly through family group chats.</p>
             
-            <div class="visual-section">
+            <div class="visual-container">
                 <img src="assets/img/misinformation-spread.jpg" alt="Visualization of misinformation spread on social media">
-                <p class="image-caption">Photo by AFP. Visual representation of how misinformation spreads through social media networks.</p>
+                <p class="caption">Photo by AFP. Visual representation of how misinformation spreads through social media networks, reaching thousands of users within hours.</p>
             </div>
-            
-            <p>Through research and personal observation, I aim to understand how misinformation affects societies globally and what we can do to become more critical consumers of digital content.</p>
-        </div>
 
-        <div class="dcp-section">
-            <h2>📊 Key Findings</h2>
-            <div class="key-findings">
-                <h3>What the Research Shows:</h3>
+            <p>When I came to the United States for university, I noticed similar patterns, particularly around the 2020 presidential election, the COVID-19 pandemic, and social movements. Despite the vastly different cultures, languages, and political systems, the underlying mechanisms were remarkably similar: emotional content, sensational headlines, and algorithm-driven amplification.</p>
+            
+            <p>This realization transformed my understanding of misinformation from a local problem to a global phenomenon. Through this research, I seek to understand how false information affects societies across borders and what we can do to become more critical consumers of digital content.</p>
+        </section>
+
+        <!-- Key Findings Section -->
+        <section class="section">
+            <h2>Research Findings</h2>
+            
+            <h3>What the Data Reveals</h3>
+            <div class="findings-list">
                 <ul>
-                    <li><strong>False news spreads faster and farther than true news.</strong> Research by Vosoughi, Roy, and Aral (2018) found that false information reaches 1,500 people six times faster than accurate information on Twitter.</li>
-                    <li><strong>Social media bots and algorithms amplify misleading posts.</strong> Automated accounts and engagement-driven algorithms prioritize content that generates strong emotional reactions, often spreading misinformation in the process (Shao et al., 2018).</li>
-                    <li><strong>Cultural factors shape how people interpret digital content.</strong> In Bangladesh, lower media literacy rates and limited fact-checking resources contribute to widespread belief in false information (Al-Zaman, 2021). In the U.S., political polarization and echo chambers reinforce existing beliefs.</li>
-                    <li><strong>Platforms often reward misinformation with more visibility.</strong> Content that generates high engagement—regardless of accuracy—is promoted by algorithms designed to maximize user interaction (Yale School of Management, 2021).</li>
-                    <li><strong>Misinformation is the leading cause of stress for youth on social media.</strong> According to UNICEF Bangladesh (2020), young people are particularly vulnerable to the psychological effects of encountering false information online.</li>
+                    <li><strong>False news spreads significantly faster than truth.</strong> Research by Vosoughi, Roy, and Aral (2018) analyzing millions of tweets found that false information reaches 1,500 people six times faster than accurate information. False news was 70% more likely to be retweeted than true news.</li>
+                    
+                    <li><strong>Social media algorithms amplify misinformation.</strong> Automated accounts (bots) and engagement-driven algorithms prioritize content that generates strong emotional reactions, often spreading misinformation in the process (Shao et al., 2018). Platforms reward engagement over accuracy.</li>
+                    
+                    <li><strong>Cultural context shapes belief in misinformation.</strong> In Bangladesh, lower media literacy rates and limited fact-checking resources contribute to widespread belief in false information (Al-Zaman, 2021). In the United States, political polarization and echo chambers reinforce existing beliefs regardless of factual accuracy.</li>
+                    
+                    <li><strong>Platforms reward viral content regardless of truth.</strong> Content that generates high engagement—regardless of accuracy—is promoted by algorithms designed to maximize user interaction and time spent on platform (Yale School of Management, 2021).</li>
+                    
+                    <li><strong>Misinformation creates psychological stress.</strong> According to UNICEF Bangladesh (2020), misinformation is the leading cause of stress for youth on social media. Young people are particularly vulnerable to the psychological effects of encountering false information online.</li>
+                </ul>
+            </div>
+
+            <h3>Visual Evidence: Comparing Spread Patterns</h3>
+            <div class="visual-container">
+                <p>The visualization below compares how low-credibility content spreads versus fact-checked information on social media. Each circle represents a network of users sharing content—the larger and denser the circles, the wider the reach.</p>
+                <img src="assets/img/virality-comparison.jpg" alt="Comparison of low-credibility versus fact-checked content spread on social media">
+                <p class="caption">Online virality of low-credibility versus fact-checked content. The stark difference shows that misleading articles reach tens of thousands of users almost instantly, while verified information spreads much more slowly. This reveals how social media systems are built to prioritize emotional and viral content over accuracy. Adapted from Shao, C., Ciampaglia, G. L., Varol, O., Flammini, A., & Menczer, F. (2018). The spread of low-credibility content by social bots. <em>Nature Communications, 9</em>(1), 4787.</p>
+            </div>
+        </section>
+
+        <!-- Comparison Section -->
+        <section class="section">
+            <h2>Bangladesh vs. United States: Different Contexts, Similar Patterns</h2>
+            
+            <p><strong>In Bangladesh:</strong> Misinformation spreads primarily through Facebook and WhatsApp, where millions of users rely on these platforms as their main news source. People often trust content because it comes from friends or family members, rarely questioning its validity. The lack of widespread media literacy education and limited fact-checking resources exacerbate the problem (Al-Zaman, 2021).</p>
+            
+            <p><strong>In the United States:</strong> Misinformation spreads through larger online communities and is amplified by political polarization. People follow pages and accounts that match their existing beliefs, creating echo chambers where false information is reinforced rather than challenged. During the COVID-19 pandemic and 2020 election, misinformation spread faster than factual reporting (Cinelli et al., 2020).</p>
+            
+            <p><strong>Common Thread:</strong> In both countries, emotion drives the spread. Content that triggers fear, anger, or outrage spreads faster than neutral, factual information. Social media algorithms, designed to maximize engagement, inadvertently reward misinformation by giving it greater visibility.</p>
+        </section>
+
+        <!-- Global Response Section -->
+        <section class="section">
+            <h2>Global Efforts to Combat Misinformation</h2>
+            
+            <div class="global-case">
+                <h3>Case Study: China's Influencer Regulation</h3>
+                
+                <div class="visual-container" style="margin-top: 1.5rem;">
+                    <img src="assets/img/china-regulation.jpg" alt="Representation of government regulation of online content">
+                    <p class="caption">Photo by Dreamtime Stock Photos. Representation of government efforts to regulate online content and combat misinformation.</p>
+                </div>
+                
+                <p>In 2025, China implemented strict regulations requiring influencers to have verified degrees in specific fields (health, education, law) before discussing these topics online. The law also bans hidden advertisements for medical and health products often disguised as educational content (The Economic Times, 2025).</p>
+                
+                <p><strong>The Debate:</strong> This regulation sparked global discussion about the balance between public safety and freedom of expression. Supporters argue it protects citizens from dangerous misinformation spread by unqualified "experts." Critics view it as censorship that limits creativity and personal storytelling.</p>
+                
+                <p><strong>My Perspective:</strong> While China's approach may seem extreme, it reflects a real problem—unverified "experts" spreading health misinformation can have serious consequences. However, complete restriction isn't the answer. Better solutions include platform transparency, clear labeling of expert vs. personal content, and improved media literacy education rather than outright bans.</p>
+            </div>
+        </section>
+
+        <!-- Practical Tips Section -->
+        <section class="section">
+            <h2>How to Identify and Avoid Misinformation</h2>
+            
+            <div class="tips-section">
+                <h3>Practical Verification Strategies</h3>
+                <ul>
+                    <li><strong>Check the source.</strong> Verify that information comes from a credible news organization or official source. Be wary of unfamiliar website names or pages that mimic legitimate news outlets.</li>
+                    
+                    <li><strong>Check the date.</strong> Old news is often recirculated during similar events, creating unnecessary panic. Always verify when information was originally published.</li>
+                    
+                    <li><strong>Cross-reference with multiple sources.</strong> If only one outlet is reporting a major story, it may not be accurate. Check at least two other reputable sources before believing or sharing.</li>
+                    
+                    <li><strong>Notice your emotional reaction.</strong> Misinformation is designed to trigger strong emotions—fear, anger, excitement. If content makes you feel intense emotion immediately, pause before sharing and verify the information first.</li>
+                    
+                    <li><strong>Reverse search images and videos.</strong> Use Google Images or TinEye to check if media has been taken out of context or manipulated. Many viral posts use real images but present them with false information.</li>
+                    
+                    <li><strong>Use fact-checking websites.</strong> Sites like Snopes, FactCheck.org, and PolitiFact specialize in verifying viral claims, especially about science, health, and politics.</li>
+                    
+                    <li><strong>Be skeptical of sensational headlines.</strong> If a headline seems too shocking to be true, read the full article. Headlines are often designed for clicks rather than accuracy.</li>
                 </ul>
             </div>
             
-            <div class="visual-section">
-                <h3 style="color: #c41e3a; margin-bottom: 1rem;">Visual Evidence: How Misinformation Spreads</h3>
-                <p>The visualization below compares how low-credibility content spreads versus fact-checked information on social media. Each circle represents a group of users sharing content—larger, denser circles indicate wider reach.</p>
-                <img src="assets/img/virality-comparison.jpg" alt="Comparison of low-credibility versus fact-checked content spread">
-                <p class="image-caption">Online virality of low-credibility versus fact-checked content. Adapted from Shao, C., Ciampaglia, G. L., Varol, O., Flammini, A., & Menczer, F. (2018). The spread of low-credibility content by social bots. <em>Nature Communications, 9</em>(1), 4787. https://doi.org/10.1038/s41467-018-06930-7</p>
-                <p style="margin-top: 1rem;">This data visualization demonstrates that misleading articles reach tens of thousands of users almost instantly, while verified information spreads much more slowly. The difference is stark and reveals how social media systems are built to prioritize emotional and viral content over accuracy.</p>
-            </div>
-        </div>
-
-        <div class="dcp-section">
-            <h2>🌏 Global Response: Case Study from China</h2>
-            <div class="visual-section">
-                <p>As misinformation continues to spread globally, some countries have implemented strict regulations. China recently enacted a law requiring influencers to have verified degrees in specific fields (health, education, law) before discussing these topics online.</p>
-                <img src="assets/img/china-regulation.jpg" alt="Representation of China's influencer regulations">
-                <p class="image-caption">Photo by Dreamtime Stock Photos. Visual representation of government regulation of online content.</p>
-                <p style="margin-top: 1rem;"><strong>The debate:</strong> While this regulation aims to prevent unqualified individuals from spreading dangerous misinformation, it also raises concerns about freedom of expression and censorship. This case demonstrates the complex balance between protecting public safety and maintaining digital freedom (The Economic Times, 2025).</p>
-            </div>
-        </div>
-
-        <div class="dcp-section">
-            <h2>💭 Personal Reflection</h2>
-            <div class="personal-reflection">
-                <p>Working on this project changed how I view social media entirely. I used to scroll through feeds without questioning what I saw, but now I understand the real impact of every share, like, and comment.</p>
-                <p style="margin-top: 1rem;">I've seen how misinformation affects both of my homes—Bangladesh and the United States—in different ways but with the same emotional impact. In Bangladesh, people trust content from friends and family. In the United States, people trust content that aligns with their political beliefs. In both cases, emotion drives belief before logic.</p>
-                <p style="margin-top: 1rem;"><strong>My takeaway:</strong> Every person has power in the digital world. What we share matters. Even a few seconds of thought before clicking "share" can prevent false information from reaching hundreds or thousands of people.</p>
-            </div>
-        </div>
-            <div class="tips-box">
-                <h3>How You Can Identify False Information Online:</h3>
+            <p style="margin-top: 2rem;"><strong>Remember:</strong> Every share multiplies the reach of information. Taking a few seconds to verify before clicking "share" can prevent false information from reaching hundreds or thousands of people.</p>
+        </section>
+            
+            <div class="tips-section">
+                <h3>Practical Verification Strategies</h3>
                 <ul>
-                    <li>✅ <strong>Check the publication date and source.</strong> Is it from a credible news organization? Has the source been reliable in the past?</li>
-                    <li>✅ <strong>Verify with at least two other reputable sources.</strong> If only one outlet is reporting a major story, it may not be accurate.</li>
-                    <li>✅ <strong>Look for emotionally charged language.</strong> Misinformation often uses extreme words designed to provoke anger, fear, or outrage.</li>
-                    <li>✅ <strong>Reverse search suspicious images or videos.</strong> Use Google Images or TinEye to check if media has been taken out of context or manipulated.</li>
-                    <li>✅ <strong>Be skeptical of headlines that seem too shocking to be true.</strong> Click through to read the full article before sharing.</li>
-                    <li>✅ <strong>Check fact-checking websites.</strong> Sites like Snopes, FactCheck.org, and PolitiFact can help verify claims.</li>
+                    <li><strong>Check the source.</strong> Verify that information comes from a credible news organization or official source. Be wary of unfamiliar website names or pages that mimic legitimate news outlets.</li>
+                    
+                    <li><strong>Check the date.</strong> Old news is often recirculated during similar events, creating unnecessary panic. Always verify when information was originally published.</li>
+                    
+                    <li><strong>Cross-reference with multiple sources.</strong> If only one outlet is reporting a major story, it may not be accurate. Check at least two other reputable sources before believing or sharing.</li>
+                    
+                    <li><strong>Notice your emotional reaction.</strong> Misinformation is designed to trigger strong emotions—fear, anger, excitement. If content makes you feel intense emotion immediately, pause before sharing and verify the information first.</li>
+                    
+                    <li><strong>Reverse search images and videos.</strong> Use Google Images or TinEye to check if media has been taken out of context or manipulated. Many viral posts use real images but present them with false information.</li>
+                    
+                    <li><strong>Use fact-checking websites.</strong> Sites like Snopes, FactCheck.org, and PolitiFact specialize in verifying viral claims, especially about science, health, and politics.</li>
+                    
+                    <li><strong>Be skeptical of sensational headlines.</strong> If a headline seems too shocking to be true, read the full article. Headlines are often designed for clicks rather than accuracy.</li>
                 </ul>
             </div>
-        </div>
+            
+            <p style="margin-top: 2rem;"><strong>Remember:</strong> Every share multiplies the reach of information. Taking a few seconds to verify before clicking "share" can prevent false information from reaching hundreds or thousands of people.</p>
+        </section>
 
+        <!-- Personal Reflection Section -->
+        <section class="section">
+            <div class="reflection-box">
+                <h2 style="color: white; border-bottom: none;">Personal Reflection</h2>
+                <p>Working on this project fundamentally changed how I view social media and online information. I used to scroll through feeds without questioning what I saw, trusting that if something appeared credible or came from someone I knew, it was probably true. Now I understand that belief in misinformation isn't about intelligence—it's about how our emotions and social connections intersect with algorithmic systems designed for engagement.</p>
+                
+                <p style="margin-top: 1.5rem;">I've seen how misinformation affects both of my homes—Bangladesh and the United States. In Bangladesh, trust in family and community makes people vulnerable to false information shared through personal networks. In the United States, political polarization makes people trust information that aligns with their beliefs over objective facts. In both cases, emotion drives belief before logic, and social media amplifies this tendency.</p>
+                
+                <p style="margin-top: 1.5rem;"><strong>My Key Takeaway:</strong> We all have power in the digital world. Every like, share, and comment contributes to what information spreads. By taking a few extra seconds to verify before sharing, we can reduce the spread of misinformation and make online spaces safer and more reliable for everyone.</p>
+            </div>
+        </section>
+
+        <!-- References Section -->
         <div class="references">
-            <h2>📚 References</h2>
+            <h2>References</h2>
             <ol>
                 <li>Al-Zaman, M. S. (2021). Spreading fake news in the virtual realm: A case study in Bangladesh. <em>Global Journal of Human-Social Science, 21</em>(2), 27–34.</li>
                 
@@ -341,27 +460,30 @@
                 
                 <li>Shao, C., Ciampaglia, G. L., Varol, O., Flammini, A., & Menczer, F. (2018). The spread of low-credibility content by social bots. <em>Nature Communications, 9</em>(1), 4787. https://doi.org/10.1038/s41467-018-06930-7</li>
                 
+                <li>The Economic Times. (2025, April 7). No degree, no discussion? China tightens the grip on influencers and its new law has sparked massive debate online. <em>The Economic Times</em>. https://economictimes.indiatimes.com/news/international/global-trends/us-news-no-degree-no-discussion-china-tightens-the-grip-on-influencers-and-its-new-law-has-sparked-massive-debate-online-check-details/articleshow/124929667.cms</li>
+                
                 <li>UNICEF Bangladesh. (2020). <em>UNICEF youth poll: Misinformation is the leading cause of stress for youth on social media in Bangladesh</em>. UNICEF. https://www.unicef.org/bangladesh/en/press-releases/unicef-youth-poll-misinformation-leading-cause-stress-youth-social-media</li>
                 
                 <li>Vosoughi, S., Roy, D., & Aral, S. (2018). The spread of true and false news online. <em>Science, 359</em>(6380), 1146–1151. https://doi.org/10.1126/science.aap9559</li>
                 
-                <li>The Economic Times. (2025, April 7). No degree, no discussion? China tightens the grip on influencers and its new law has sparked massive debate online. <em>The Economic Times</em>. https://economictimes.indiatimes.com/news/international/global-trends/us-news-no-degree-no-discussion-china-tightens-the-grip-on-influencers-and-its-new-law-has-sparked-massive-debate-online-check-details/articleshow/124929667.cms</li>
+                <li>Yale School of Management. (2021). How social media rewards misinformation. <em>Yale Insights</em>. https://insights.som.yale.edu/insights/how-social-media-rewards-misinformation</li>
             </ol>
             
-            <div style="margin-top: 2rem; padding: 1.5rem; background: #e7f3ff; border-left: 4px solid #667eea; border-radius: 5px;">
-                <h3 style="color: #667eea; margin-top: 0;">📄 Full Research Paper</h3>
-                <p>For a complete analysis including additional case studies, methodology, and extended discussion, download the full research paper:</p>
-                <a href="assets/docs/DCP_Full_Paper.pdf" download style="display: inline-block; padding: 0.8rem 1.5rem; background: #667eea; color: white; text-decoration: none; border-radius: 5px; font-weight: 600; margin-top: 0.5rem;">Download Complete Paper (PDF)</a>
+            <div style="margin-top: 2rem; padding: 1.5rem; background: white; border-radius: 8px; border-left: 5px solid #667eea;">
+                <h3 style="color: #667eea; margin-top: 0;">Full Research Paper</h3>
+                <p>For complete analysis including methodology, additional case studies, and extended discussion, download the full research paper:</p>
+                <a href="assets/docs/DCP_Full_Paper.pdf" class="download-btn" download style="margin-top: 1rem;">Download Complete Paper (PDF)</a>
             </div>
-            
-            <div style="margin-top: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
-                <h3 style="color: #c41e3a; margin-top: 0;">🖼️ Image Attributions</h3>
-                <ul style="list-style: none; margin-left: 0;">
-                    <li style="margin-bottom: 0.5rem;">• Misinformation spread visual: Photo by AFP</li>
-                    <li style="margin-bottom: 0.5rem;">• Virality comparison diagram: Adapted from Shao et al. (2018), <em>Nature Communications</em></li>
-                    <li>• Online regulation image: Dreamtime Stock Photos</li>
-                </ul>
-            </div>
+        </div>
+
+        <!-- Image Attributions -->
+        <div class="attributions">
+            <h3>Image Attributions</h3>
+            <ul>
+                <li><strong>Misinformation spread visualization:</strong> Photo by AFP</li>
+                <li><strong>Virality comparison diagram:</strong> Adapted from Shao, C., Ciampaglia, G. L., Varol, O., Flammini, A., & Menczer, F. (2018). The spread of low-credibility content by social bots. <em>Nature Communications, 9</em>(1), 4787.</li>
+                <li><strong>Online regulation image:</strong> Dreamtime Stock Photos</li>
+            </ul>
         </div>
     </div>
 
